@@ -54,6 +54,7 @@ public class MultifieldHelper {
     public void setDetailsWithNastedMultifield(List<NastedHalper> detailsWithNastedMultifield) {
         this.detailsWithNastedMultifield = detailsWithNastedMultifield;
     }
+
      //  public List<NastedHalper> getBookEditons() {
 //        return bookEditons;
 //    }

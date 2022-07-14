@@ -60,7 +60,7 @@ public class MultiFieldModelImpl implements MultiFieldModel {
     public List<MultifieldHelper> getDetailsWithNastedMultifield() {
         List<MultifieldHelper> detailsNasted=new ArrayList<>();
         try {
-            Resource resourceNasted=resource.getChild("detailswithnastedmultifield");
+            Resource resourceNasted=resource.getChild("detailswithbean");
             if(resourceNasted!=null){
                 for (Resource bookNasted : resourceNasted.getChildren()) {
                     MultifieldHelper multifieldHelper=new MultifieldHelper(bookNasted);
