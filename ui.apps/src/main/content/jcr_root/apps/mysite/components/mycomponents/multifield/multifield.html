@@ -1,0 +1,23 @@
+<div data-sly-use.model="my.site.my_site.core.models.MultiFieldModel">
+    <div data-sly-list.item="${model.multiFieldDetailsWithMap}">
+        <p>${item.label}</p>
+        <a href="${item.link}" target="_blank" >${item.link}</a>
+    </div>
+    ========================== USING BEAN ================================
+    <div data-sly-list.item="${model.detailsWithBean}">
+        <p>${item.name}</p>
+        <p>${item.city}</p>
+        <p>${item.state}</p>
+    </div>
+
+
+
+    ================== USING NASTED MULTIFIELD ====================
+    <div data-sly-list="${model.detailsWithNastedMultifield}">
+
+        <div data-sly-list.editon="${item.nastedHelper}">
+            <p>  ${editon.city} </p>
+            <p> ${editon.state} </p>
+        </div>
+    </div>
+</div>
