@@ -20,7 +20,6 @@ public class NastedHalper {
     public String getCity() {
         return city;
     }
-
     public String getState() {
         return state;
     }

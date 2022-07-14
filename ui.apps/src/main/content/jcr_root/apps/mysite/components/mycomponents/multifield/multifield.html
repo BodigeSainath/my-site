@@ -3,21 +3,20 @@
         <p>${item.label}</p>
         <a href="${item.link}" target="_blank" >${item.link}</a>
     </div>
-    ========================== USING BEAN ================================
+
+    Names are
     <div data-sly-list.item="${model.detailsWithBean}">
-        <p>${item.name}</p>
-        <p>${item.city}</p>
-        <p>${item.state}</p>
+        <p>${itemList.count} : ${item.name}</p>
     </div>
 
 
 
-    ================== USING NASTED MULTIFIELD ====================
+    Address
     <div data-sly-list="${model.detailsWithNastedMultifield}">
 
-        <div data-sly-list.editon="${item.nastedHelper}">
-            <p>  ${editon.city} </p>
-            <p> ${editon.state} </p>
+        <div data-sly-list.editon="${item.detailsWithNastedMultifield}">
+            <p> ${itemList.count} : ${editon.city} </p>
+            <p> ${itemList.count} : ${editon.state} </p>
         </div>
     </div>
 </div>
