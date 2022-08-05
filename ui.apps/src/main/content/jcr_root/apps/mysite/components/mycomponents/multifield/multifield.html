@@ -1,0 +1,22 @@
+<div data-sly-use.model="my.site.my_site.core.models.MultiFieldModel">
+    <div data-sly-list.item="${model.multiFieldDetailsWithMap}">
+        <p>${item.label}</p>
+        <a href="${item.link}" target="_blank" >${item.link}</a>
+    </div>
+
+    Names are
+    <div data-sly-list.item="${model.detailsWithBean}">
+        <p>${itemList.count} : ${item.name}</p>
+    </div>
+
+
+
+    Address
+    <div data-sly-list="${model.detailsWithNastedMultifield}">
+
+        <div data-sly-list.editon="${item.detailsWithNastedMultifield}">
+            <p> ${itemList.count} : ${editon.city} </p>
+            <p> ${itemList.count} : ${editon.state} </p>
+        </div>
+    </div>
+</div>
